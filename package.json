@@ -1,6 +1,6 @@
 {
   "name": "marcel-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Command line that build a marcel plugin and add try catch for HTML imports.",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,11 @@
   "bin": {
     "marcel-builder": "./index.js"
   },
-  "homepage": "https://github.com/Zenika/marcel-builder#readme"
+  "homepage": "https://github.com/Zenika/marcel-builder#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-insert-lines": "0.0.4",
+    "merge-stream": "^1.0.1",
+    "polymer-build": "^1.6.0"
+  }
 }
