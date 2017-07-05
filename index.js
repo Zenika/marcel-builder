@@ -6,9 +6,8 @@ const HtmlSplitter = require('polymer-build').HtmlSplitter;
 
 const insertLines = require('gulp-insert-lines');
 
-const project = new PolymerProject(require('./polymer.json'));
+const project = new PolymerProject(require(process.cwd() + '/polymer.json'));
 const sourcesHtmlSplitter = new HtmlSplitter();
-
 const depStream = project.dependencies()
   .pipe(insertLines({
     'after': '<script',
